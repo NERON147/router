@@ -32,8 +32,8 @@ export default {
           url: '/'
         },
           {
-          title: 'Example',
-          url: '/example'
+          title: 'Shop',
+          url: '/shop'
         }
       ]
     }
