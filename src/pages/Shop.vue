@@ -7,6 +7,7 @@
             <shopItem 
             v-for="product in shopList" :key="product.id"
             :product="product"
+           
             />
             </div>
         </div>
@@ -27,8 +28,12 @@ export default {
   },
   created () {
     this.shopList = this.$store.getters.getShopList
+  },
+  methods: {
+    
+    },
   }
-}
+
 </script>
 
 <style>
