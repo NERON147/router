@@ -10,6 +10,7 @@ import Home from '@/pages/Home'
 import NotFound from '@/pages/404'
 import Shop from '@/pages/Shop'
 import Product from '@/pages/Product'
+import Cart from '@/pages/Cart'
 
 //Routering
 
@@ -30,6 +31,12 @@ export default new Router({
             path: '/shop/:id',
             name: 'product',
             component: Product
+        },
+        ,
+        {
+            path: '/cart',
+            name: 'cart',
+            component: Cart
         },
         {
             path: '*',

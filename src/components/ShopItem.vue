@@ -2,6 +2,10 @@
   <div class="item">
     <img :src="product.img" :alt="product.title">
     <router-link :to="/shop/ + product.id" class="link"> {{product.title}}</router-link>
+    <div class="buy">
+        <button class="btn btn-primary">Купить</button>
+    </div>
+    
   </div>
 </template>
 
@@ -30,4 +34,15 @@ export default {
         font-size: 22px;
     }
 }
+
+.btn {
+    margin-top: 10px;
+    transition: all .1s ease-in;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+
 </style>

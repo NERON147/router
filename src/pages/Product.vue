@@ -3,7 +3,7 @@
     <section>
         <div class="container">
             <img :src="product.img" :alt="product.title">
-             <h1> {{product.title}} </h1>
+             <h1 class="title"> {{product.title}} </h1>
              <p>{{product.descr}}</p>
         </div>
     </section>

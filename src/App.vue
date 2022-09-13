@@ -34,6 +34,10 @@ export default {
           {
           title: 'Shop',
           url: '/shop'
+        },
+          {
+          title: 'Cart',
+          url: '/cart'
         }
       ]
     }
