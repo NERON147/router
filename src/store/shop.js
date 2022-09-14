@@ -1,5 +1,6 @@
 export default {
   state: {
+    cart: [],
     shopList: [
         {
             id: 1,
@@ -33,11 +34,15 @@ export default {
   },
 
   mutations: {
-
+    SET_CART: (state, product) => {
+      state.cart.push(product)
+    }
   },
 
   actions: {
-
+    ADD_TO_CART({commit}, product) {
+      commit('SET_CART', product)
+    }
   },
 
   getters: {
@@ -46,7 +51,10 @@ export default {
     },
     getProduct: (state) => (id) => {
         return state.shopList.find(product => product.id == id)
-    }
+    },
+    CART(state) {
+      return state.cart
+    },
   }
 
 }

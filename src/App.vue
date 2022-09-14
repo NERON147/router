@@ -46,6 +46,9 @@ export default {
 </script>
 
 <style lang='scss'>
+.wrapper {
+  background-color: rgb(235, 235, 235);
+}
 .navbar-link {
   &.router-link-exact-active {
     color: rgb(143, 101, 170);

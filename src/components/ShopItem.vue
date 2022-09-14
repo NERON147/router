@@ -6,7 +6,7 @@
     </router-link>
     <div class="price">{{ product.price }} ₽</div>
     <div class="buy">
-      <button class="btn btn-primary">Купить</button>
+      <button class="btn btn-primary" @click="addToCart">Купить</button>
     </div>
   </div>
 </template>
@@ -23,7 +23,10 @@ export default {
     return {};
   },
   methods: {
-   
+   addToCart() {
+    this.$emit("addToCart", this.product);
+    
+   }
   },
 };
 </script>
